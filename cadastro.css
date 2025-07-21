@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #4facfe, #00f2fe);
+    background-color: #c6d3e0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,21 +8,23 @@ body {
     min-height: 100vh;
     margin: 0;
     color: #333;
+    font-size: 18px; /* Tamanho base para mobile */
 }
 
 p {
     margin: 6px 0 2px;
     font-weight: bold;
+    font-size: 18px;
 }
 
-/* Espaço entre inputs mais enxuto */
 input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="date"] {
     width: 280px;
-    padding: 8px;
-    margin-bottom: 6px; /* Reduzido */
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 6px;
     border: none;
     border-radius: 6px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
@@ -30,12 +32,13 @@ input[type="date"] {
 
 input[type="button"] {
     width: 300px;
-    padding: 10px;
+    padding: 12px;
     margin-top: 10px;
     background-color: #007BFF;
     color: white;
     border: none;
     border-radius: 6px;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -50,6 +53,7 @@ a {
     color: white;
     text-decoration: underline;
     font-weight: bold;
+    font-size: 16px;
 }
 
 @media (max-width: 400px) {
@@ -59,5 +63,31 @@ a {
     input[type="date"],
     input[type="button"] {
         width: 90%;
+    }
+}
+
+/* 📺 AUMENTO DE FONTE PARA TELAS MAIORES (DESKTOP) */
+@media (min-width: 768px) {
+    body {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="date"] {
+        font-size: 18px;
+    }
+
+    input[type="button"] {
+        font-size: 18px;
+    }
+
+    a {
+        font-size: 18px;
     }
 }
