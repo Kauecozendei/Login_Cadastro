@@ -1,0 +1,63 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+p {
+    margin: 6px 0 2px;
+    font-weight: bold;
+}
+
+/* Espaço entre inputs mais enxuto */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"] {
+    width: 280px;
+    padding: 8px;
+    margin-bottom: 6px; /* Reduzido */
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+input[type="button"] {
+    width: 300px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+a {
+    margin-top: 20px;
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+@media (max-width: 400px) {
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="date"],
+    input[type="button"] {
+        width: 90%;
+    }
+}
