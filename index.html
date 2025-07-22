@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <form onsubmit="return login(event)">
+
     <!-- Usuário inseri o seu  nome cadastrado -->
     <p>Minha Conta!</p>
     <input type="text" id="NomeUsuario" placeholder="Nome do seu usuário...">
@@ -17,7 +19,8 @@
     <br><br>
 
     <!-- Botão de enviar -->
-    <input type="button" value="Enviar">
+     <button>Enviar</button>
+    </form>
 
     <!-- Caso não tenha cadastro -->
     <a href="Cadastro.html">Cadastrar-se</a>
