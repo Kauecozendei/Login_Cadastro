@@ -4,30 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro usuário</title>
-    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Usuário irá inserir a data de nascimento -->
-    <p>Cadastro</p>
-    <input type="date" id="DataNascimento" placeholder="Sua data de nascimento...">
-    <br>
-
+    <form onsubmit="return cadastrarUsuario(event)">
+   <p>Cadastro</p>
     <!-- Usuário irá inserir o e-mail -->
-
-    <input type="email" id="emailUsuario" placeholder="Seu e-mail...">
+    <input type="text" id="NomeCadastro" placeholder="Seu nome...">
     <br>
 
     <!-- Usuário irá inserir a nova senha -->
-    <input type="text" id="newpassword" placeholder="Sua senha...">
-    <br>
-
-    <!-- Confirmar a senha  -->
-    <input type="text" id="ConfirmarSenha" placeholder="Confirme a sua senha...">
+    <input type="text" id="SenhaCadastro" placeholder="Sua senha...">
     <br>
 
     <!-- Enviar -->
-    <input type="button" value="Enviar">
+    <button>Enviar</button>
     
-    <script src="cadastro.js"></script>
+    </form>
+    <script src="Script.js"></script>
 </body>
 </html>
