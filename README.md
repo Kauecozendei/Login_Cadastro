@@ -1,4 +1,4 @@
-## Tela e login e cadastro de usuários criado com HTML, CSS e JS puro.
+## Tela de login e cadastro de usuários criado com HTML, CSS e JS puro.
 
 <h3>🌐 Linguagem utilizada:</h3>
 <div style="display: inline_block"><br>
